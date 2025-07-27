@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BFS vs DFS Maze Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>
+    Breadth-First Search (BFS) vs Depth-First Search (DFS) <br>
+    Maze Solver
+  </h1>
+
+  <div class="canvas-container">
+    <div>
+      <h2>BFS</h2>
+      <canvas id="canvasBFS" width="400" height="400"></canvas>
+      <p>Visited Cells: <span id="bfsCount">0</span></p>
+      <p>Execution Time: <span id="bfsTime">0</span> ms</p>
+    </div>
+    <div>
+      <h2>DFS</h2>
+      <canvas id="canvasDFS" width="400" height="400"></canvas>
+      <p>Visited Cells: <span id="dfsCount">0</span></p>
+      <p>Execution Time: <span id="dfsTime">0</span> ms</p>
+    </div>
+  </div>
+
+
+  <div class="controls">
+    <button onclick="setStartMode()">Set Start Node</button>
+    <button onclick="setEndMode()">Set End Node</button>
+    <button onclick="runBFS()">Run BFS</button>
+    <button onclick="runDFS()">Run DFS</button>
+    <button onclick="resetGrid()">Reset</button>
+  </div>
+
+
+  <script src="build/algos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
